@@ -49,13 +49,13 @@ to their platform-provided dashboard. See the following link for details:
 
 Routes:
 - /dashboard
-  - users can view recent and upcoming payouts and perform other relevant tasks.
+    - users can view recent and upcoming payouts and perform other relevant tasks.
 - /dashboard/jobs
-  - users can select either inbound, in-review, or completed jobs.
+    - users can select either inbound, in-review, or completed jobs.
 - /dashboard/jobs/inbound
-  - users can view inbound jobs yet to be completed
-- /dashboard/jobs/review
-  - users will submit a review that will notify to corresponding client that 
+    - users can view inbound jobs yet to be completed
+- /dashboard/jobs/review/[id]
+    - users will submit a review that will notify to corresponding client that 
     the job has been completed. The client will accept the work as finalized if completed. 
     If the client does not accept the work, an audit will be triggered until
     the job is accepted by the client. If the client does not accept the work
@@ -65,7 +65,7 @@ Routes:
     specified deposit. The client will not lose their deposit if they elect to
     have the work completed by the platform.
 - /dashboard/jobs/completed
-  - lists the jobs that have been completed by that particular contractor. If 
+    - lists the jobs that have been completed by that particular contractor. If 
     an account manager is logged in, they will be able to see all completed
     jobs for all contractors.
 
