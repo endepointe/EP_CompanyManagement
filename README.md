@@ -51,7 +51,8 @@ the estimate. If the client accepts the estimate, they will place a deposit
 equal to 35% of the project cost.
 
 #### Front_End
-The front-end will provide a gateway for the account managers and contractors.
+The front-end will provide a gateway for the account types to manage aspects
+of their user type.
 
 Each gateway will allow the user types to log into their account or create one
 if they are new users. 
