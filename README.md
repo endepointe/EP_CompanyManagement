@@ -2,16 +2,9 @@
 
 ## TOC
 1. [About](#About)
-    1. Description 
 2. [Service Management](#Service_Management)
 
 ### About
-Several applications will be displayed within endepointe and each of
-them will have their own api and database.
-
-The user interfaces will be written with Blazor and React. 
-
-#### Description
 The following platform provides a solution for managing aspects of your
 business.
 
@@ -30,4 +23,4 @@ The following services will be offered:
     2. Accounting
 
 #### Contractor_Account_Management
-- Onboarding
+- Onboarding 
