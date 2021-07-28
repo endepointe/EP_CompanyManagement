@@ -56,7 +56,7 @@ The front-end will provide a gateway for the account managers and contractors.
 Each gateway will allow the user types to log into their account or create one
 if they are new users. 
 
-Log into account: 
+Log into account:
 User will log into their account with their credentials or OAuth2.0 flow
 
 Create an account:
@@ -70,7 +70,13 @@ When the user has completed the Connect onboarding flow, they will be redirected
 to their platform-provided dashboard. See the following link for details:
 [User Dashboard](https://stripe.com/docs/connect/express-dashboard)
 
-Routes:
+All user types:
+- /onboarding
+    - all user types that do not have an existing account will not be permitted
+    access to any other route until the onboarding for their user type is 
+    completed.
+
+Contractor and Admin Routes:
 - /dashboard
     - users can view recent and upcoming payouts and perform other relevant tasks.
 - /dashboard/jobs
@@ -91,5 +97,17 @@ Routes:
     - lists the jobs that have been completed by that particular contractor. If 
     an account manager is logged in, they will be able to see all completed
     jobs for all contractors.
+
+Client Routes:
+- /dashboard
+    - clients can view their posted jobs. A progress diagram will be displayed
+    that reflects the current stage of the job id.
+- /dashboard/review
+    - client will be able to review the jobs that are ready to be marked for
+    completion. They may choose to approve or request an audit of the work. The
+    audit request will trigger an action that will notify the contractor that
+    the job has yet to be completed to satisfaction.
+- /dashboard/completed
+    - client will be able to see their completed job history
 
 #### Back_End
