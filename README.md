@@ -1,15 +1,15 @@
-# EP_ServiceManagement
+# EP_CompanyManagement
 
 ## TOC
 1. [About](#About)
-2. [Service Management](#Service_Management)
+2. [Company Management](#Company_Management)
 3. [Project Structure](#Project_Structure)
 
 ### About
 The following platform provides a solution for managing aspects of your
 business.
 
-### Service_Management
+### Company_Management
 The following services will be offered:
 
 1. Contractor account management
