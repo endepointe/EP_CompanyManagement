@@ -85,8 +85,8 @@ Contractor and Admin Routes:
 - /dashboard/jobs/inbound
     - users can view inbound jobs yet to be completed
 - /dashboard/jobs/review/[id]
-    - users will submit a review that will notify to corresponding client that 
-    the job has been completed. The client will accept the work as finalized if completed. 
+    - users will submit a review that will notify the corresponding client that 
+    the job has been completed. If completed, the client will accept the work as finalized. 
     If the client does not accept the work, an audit will be triggered until
     the job is accepted by the client. If the client does not accept the work
     and the work is in digital format, they will not receive ownership of the
