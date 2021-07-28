@@ -23,7 +23,7 @@ The following services will be offered:
     1. Onboarding
     2. Accounting
 
-### Project Structure
+### Project_Structure
 1. [User Types](#User_Types)
 2. [Front End](#Front_End)
 3. [Back End](#Back_End)
