@@ -31,6 +31,7 @@ The following services will be offered:
 #### User_Types
 - [Contractors](#Contractors)
 - [Clients](#Clients)
+- [Admins](#Admins)
 
 ##### Contractors
 Contractor user types perform the work for the business. Onboarding for these
@@ -71,12 +72,11 @@ When the user has completed the Connect onboarding flow, they will be redirected
 to their platform-provided dashboard. See the following link for details:
 [User Dashboard](https://stripe.com/docs/connect/express-dashboard)
 
-All user types:
-- /onboarding
-    - all user types that do not have an existing account will not be permitted
-    access to any other route until the onboarding for their user type is 
-    completed.
-
+Root Route:
+- /
+    - provides access to the company admin site for all user types.
+- / 
+    - 
 Contractor and Admin Routes:
 - /dashboard
     - users can view recent and upcoming payouts and perform other relevant tasks.
