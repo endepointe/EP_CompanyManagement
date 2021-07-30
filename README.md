@@ -26,6 +26,11 @@ The following services will be offered:
 ### Project_Structure
 1. [User Types](#User_Types)
 2. [Front End](#Front_End)
+    1. [Account Creation](#Account_Creation)
+        - Contractors
+        - Clients
+        - Admin
+    2. [Routes](#Routes)
 3. [Back End](#Back_End)
 
 #### User_Types
@@ -72,11 +77,22 @@ When the user has completed the Connect onboarding flow, they will be redirected
 to their platform-provided dashboard. See the following link for details:
 [User Dashboard](https://stripe.com/docs/connect/express-dashboard)
 
+##### Account_Creation
+Contractors: 
+The contractor user type will first create a platform account. Once the
+platform account has been created, the user will be able to begin the 
+onboarding process. This process will enable the user to accept payments,
+handle their tax information and view their account information via their 
+dashboard.
+
+Clients: 
+The client user type will 
+
+##### Routes
 Root Route:
 - /
-    - provides access to the company admin site for all user types.
-- / 
-    - 
+    - provides access to the company management system for all user types.
+
 Contractor and Admin Routes:
 - /dashboard
     - users can view recent and upcoming payouts and perform other relevant tasks.
@@ -110,5 +126,7 @@ Client Routes:
     the job has yet to be completed to satisfaction.
 - /dashboard/completed
     - client will be able to see their completed job history
+
+
 
 #### Back_End
