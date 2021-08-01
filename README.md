@@ -86,7 +86,16 @@ handle their tax information and view their account information via their
 dashboard.
 
 Clients: 
-The client user type will 
+The client user type will create an account after their proposal has been 
+reviewed and accepted. 
+
+Admins: 
+Admin user types will need to initiate and admin account request to recieve an 
+admin access link. This requeste action will initiate an email to the primary
+platform account owner that an admin request has been made. New admins will be
+manually added within Stripe and an account access link will be provided to
+the user. The access link will expire at a set time (7days) and the user must
+finish their account creation within that time period.
 
 ##### Routes
 Root Route:
